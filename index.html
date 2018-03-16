@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jquery login-register form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+  <head>
+  
+  </head>
+<body>
+    <!--<div class="header">
+        <img src="logo.png" alt="logo" />
+         </div> -->
+<form id="login" class="loginform">
+     <div class=whitetop>
+       <h3> Login information</h3>
+     </div>
+     <div class="login">Login</div>
+     <div class="register">Register</div>
+     <input class="pass" type="text" name="userid" id="userid" placeholder="userid" required >
+        <br>
+     <input class="pass" type="text" name="password" id ="password" placeholder="password" required>
+        <br>
+     <input id ="loginsubmit" class="submit" type="submit" value="Login">
+     
+</form>
+
+<form name="register" id="register"  method="post" class="registerform" action = "index.html">
+    <div class=whitetop>
+       <h3> Register information</h3>
+    </div>
+    <div class="login">Login</div>
+    <div class="register">Register</div>
+    <input class="pass" type="text" name="reguserid" id="reguserid" placeholder="userid" required >
+       <br>
+    <input class="pass" type="text" name="regpassword" id ="regpassword" placeholder="password" required>
+    <br>
+    <select class="pass" name = "regrole" id = "regrole" required>
+      <option value="Assembly">Assembly</option>
+      <option value="Machining">Machining</option>
+      <option value="Logistic">Logistic</option>
+    </select>
+    
+  <input class="submit" type="submit" id ="registersubmit" value="Register">
+</form>
+
+<form class='assembly' id = "assembly" name ="assembly">
+<div>
+  <h3>Assembly</h3>
+  <table id ="assemblytable" class ="listtable" style="width:100%">
+      <tbody>
+    <tr>
+      <th>userid</th>
+      <th>pass</th> 
+      <th>role</th>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</form>
+
+<form class='assembly' id = "machining" name ="machining">
+<div>
+  <h3>Machining</h3>
+  <table id ="machiningtable" class ="listtable" style="width:100%">
+      <tbody>
+    <tr>
+      <th>userid</th>
+      <th>pass</th> 
+      <th>role</th>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</form>
+
+<form class='assembly' id = "logistics" name ="logistics">
+    <div>
+      <h3>Logistics</h3>
+      <table id ="logisticstable" class ="listtable" style="width:100%">
+          <tbody>
+        <tr>
+          <th>userid</th>
+          <th>pass</th> 
+          <th>role</th>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </form>
+    
+    <form class='assembly' id = "createAsset" name ="createAsset">
+        <div class=whitetop>
+            <h3> Create Assert</h3>
+         </div>
+        
+         <input class="pass" type="text" name="assertId" id="assertId" placeholder="AssertId" required >
+            <br>
+         <input class="pass" type="text" name="regpassword" id ="regpassword" placeholder="password" required>
+         <br>
+                  
+       <input class="submit" type="submit" id ="createsubmit" value="Submit">
+        </form>
+
+        <div id ="creatediv">
+        <input id ="createassetbutton" class="submit" type="submit" value="CreateAsset"><br>
+        <input id ="logoutbutton" class="submit" type="submit" value="Logout">
+        </div>
+        
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
